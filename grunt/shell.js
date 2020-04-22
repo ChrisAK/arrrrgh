@@ -39,8 +39,7 @@ module.exports = {
   },
   'deploy-prepare': {
     command: [
-      'git checkout --orphan gh-pages',
-      'git rm --cached \'*\''
+      'git checkout --orphan gh-pages'
     ].join(' && ')
   },
   'deploy-publish': {
