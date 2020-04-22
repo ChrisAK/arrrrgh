@@ -40,7 +40,8 @@ module.exports = {
   'deploy-prepare': {
     command: [
       'git branch -D gh-pages || echo "so not removed"',
-      'git checkout --orphan gh-pages'
+      'git checkout --orphan gh-pages',
+      'git rm --cached \'*\''
     ].join(' && ')
   },
   'deploy-publish': {
